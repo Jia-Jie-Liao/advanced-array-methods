@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>陣列的進階方法 map()</h1>
+    <script>
+        let dogs = ['boy1', 'boy2', 'girl1', 'girl2']
+
+        let result = dogs.map(function (dog) 
+        {
+            return dog + ' is good'
+        })
+        console.log(result)
+        // 用for迴圈實現
+        function map2(dogs) 
+        {
+            let result3 = []
+            for (let i = 0; i < dogs.length; i++) 
+            {
+            let str = dogs[i] + ' is good'
+            result3.push(str)
+            }
+            return result3
+        }
+        console.log(map2(dogs))
+
+        // mdn 範例
+        const arr = [1, 4, 9, 16]
+        const result2 = arr.map(function (x) 
+        {
+            return x * x
+        })
+        console.log(result2)
+    </script>
+</body>
+</html>
