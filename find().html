@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>用 find 來找到第一筆符合條件的資料</h1>
+    <script>
+        const arr1 = [5, 12, 12, 8, 130, 44]
+        let found = arr1.find(function (params) 
+        {
+            return params === 12
+        })
+        console.log(found)
+        // 與 filter 差異
+        let filter = arr1.filter(function (params) 
+        {
+            return params === 12
+        })
+        console.log('filter: ', filter)
+    </script>
+</body>
+</html>
