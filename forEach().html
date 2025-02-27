@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>forEach()</h1>
+    <script>
+        const array1 = ['a', 'b', 'c']
+        array1.forEach(function(element) 
+        {
+            console.log(element + ' is good')
+        });
+        // function 作為作用域是 javascript 的基本特性
+        // webpack
+        for (let i = 0; i < array1.length; i++) 
+        {
+            console.log(array1[i] + ' is good')
+        }
+    </script>
+</body>
+</html>
